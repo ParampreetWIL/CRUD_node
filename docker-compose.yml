@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_crud_node
+    environment:
+      POSTGRES_USER: bluedog
+      POSTGRES_PASSWORD: woof
+      POSTGRES_DB: crud_node
+    ports:
+      - "5431:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

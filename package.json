@@ -1,0 +1,50 @@
+{
+  "name": "crud_node",
+  "version": "1.0.0",
+  "description": "CRUD API built in node.js using express framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ParampreetWIL/CRUD_node.git"
+  },
+  "keywords": [
+    "CRUD",
+    "Node.js",
+    "Express.js",
+    "WIL"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "author": "ParampreetWIL <parampreets.rai@thewitslab.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParampreetWIL/CRUD_node/issues"
+  },
+  "homepage": "https://github.com/ParampreetWIL/CRUD_node#readme",
+  "dependencies": {
+    "@prisma/client": "^5.19.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.2.0",
+    "prisma": "^5.19.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.6",
+    "husky": "^9.1.5",
+    "prettier": "^3.3.3",
+    "pretty-quick": "^4.0.0",
+    "ts-node": "^10.9.2"
+  }
+}
